@@ -95,7 +95,7 @@ const NewRequest = () => {
 
       let location = await Location.getCurrentPositionAsync({});
       setLocation(location);
-      const api = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.coords.latitude},${location.coords.longitude}&key=AIzaSyBUbNszKjJAkUpvdV4j-eFpr8ZWM8vIsfA`;
+      const api = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${location.coords.latitude},${location.coords.longitude}&key=ADD-KEY`;
 
       const res = await fetch(api);
       const data = await res.json();
@@ -470,7 +470,7 @@ const NewRequest = () => {
                         setSearchLocation(data.description);
                       }}
                       query={{
-                        key: "AIzaSyBLUR_dBTa9l4s-UYSpdVUJOJR3FFv2_6E",
+                        key: "ADD-KEY",
                         language: "en",
                       }}
                     />
